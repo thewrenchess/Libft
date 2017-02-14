@@ -1,24 +1,29 @@
 # libft
 libft is a library of useful C function
 
-# Installation
+## Installation
 1. Download this repository to your working directory
 2. 'make -C libft'
 3. 'make -C libft clean'
 
-# Usage
+## Usage
 Include 'libft/libft.a' in your compile command
 
-# Note
+### Note
+- If compiling with 'libft/libft.a' does not seem to establish reference with your program compiler, please compile with _libft_ source files instead. ie. 'libft/srcs/*/*.c'
 - Most of the functions are protected agains 'NULL' inputs, which can make debugging stage a little confusing
 
-# Known Bugs
+## Known Bugs
 - ft_cryptor does not work for binary files or files containing unicode
 - ft_strjoin may cause memory, use a 'temp' string
 
-# Table of Content
+## Table of Content
 
-## linkedlist
+### file
+- ft_readfile reads the entire file from _fd_ and outputs content as one string
+- get_next_line returns a line read from a file descriptor and is able to manage multiple file descriptors
+
+### linkedlist
 - ft_lstadd adds the element _new_ at the beginning of the list
 - ft_lstdel free the entire list and sets it to 'NULL'
 - ft_lstdelone finds the one corresponding link and deletes it
@@ -26,7 +31,7 @@ Include 'libft/libft.a' in your compile command
 - ft_lstnew allocates and returns a new link
 - ft_lstputstr iterates the list and display each link's content
 
-## memory
+### memory
 - ft_memalloc allocates and returns a new memory area
 - ft_memccpy 'man memccpy'
 - ft_memchr 'man memchr'
@@ -36,7 +41,7 @@ Include 'libft/libft.a' in your compile command
 - ft_memmove 'man memmove'
 - ft_memset 'man memset'
 
-## string
+### string
 - ft_strcat 'man strcat'
 - ft_strcheckch chech for character _ch_, returns the location of _ch_ or -1 if _ch_ is not found
 - ft_strchr 'man strchr'
@@ -67,14 +72,14 @@ Include 'libft/libft.a' in your compile command
 - ft_strsub allocates and returns a new substring from the string given as argument where the substring begins at _start_ and is of size _len_
 - ft_strtrim allocates and returns a copy of the string given as argument without whitespaces at the beginning and the end or the string
 
-## twodarray
+### twodarray
 - ft_countline counts how many arrays there are in the 2D array
 - ft_freetab frees the 2D array and sets it to 'NULL'
 - ft_printtab displays each string in the array
 - ft_tabcpy copies _src_ to _dst_ whose address is allocated for, but not each array
 - ft_tabinit allocates and returns a new 2D array
 
-## utility
+### utility
 - ft_atoi 'man atoi'
 - ft_bzero 'man bzero'
 - ft_cryptor makes the string unreadable, using it again reverse the affect
@@ -95,4 +100,3 @@ Include 'libft/libft.a' in your compile command
 - ft_putstr_fd outputs the string _s_ to the file descriptor _fd_
 - ft_tolower 'man tolower'
 - ft_toupper 'man toupper'
-- get_next_line returns a line read from a file descriptor and is able to manage multiple file descriptors

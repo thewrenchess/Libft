@@ -109,6 +109,7 @@ char				**ft_tabcpy(char **dst, char **src);
 size_t				ft_countline(char **tab);
 void				ft_freetab(char ***tab);
 void				ft_printtab(char **tab);
+char				*ft_readfile(int fd);
 int					get_next_line(const int fd, char **line);
 
 #endif
