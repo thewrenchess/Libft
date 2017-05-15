@@ -20,8 +20,8 @@ Include `libft/libft.a` in your compile command
 ## Table of Content
 
 ### file
-- ft_readfile reads the entire file from _fd_ and outputs content as one string
 - get_next_line returns a line read from a file descriptor and is able to manage multiple file descriptors
+- read_in takes in an unintialized line and a fd, and stores the entire fd pointed file into line. It uses ative memory allocation with an editable buff size to help read quickly and use the least amount of the memory possible.
 
 ### linkedlist
 - ft_lstadd adds the element _new_ at the beginning of the list

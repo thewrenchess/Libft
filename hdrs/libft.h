@@ -6,7 +6,7 @@
 /*   By: yherrera <yherrera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 12:53:26 by yherrera          #+#    #+#             */
-/*   Updated: 2017/05/15 12:33:01 by yherrera         ###   ########.fr       */
+/*   Updated: 2017/05/15 12:52:10 by yherrera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,7 +109,6 @@ char				**ft_tabcpy(char **dst, char **src);
 size_t				ft_countline(char **tab);
 void				ft_freetab(char ***tab);
 void				ft_printtab(char **tab);
-char				*ft_readfile(int fd);
 int					get_next_line(const int fd, char **line);
 int					read_in(int fd, char **line);
 
